@@ -12,15 +12,9 @@ div
 	font-family: Arial
 	color: black
 
-.hat, .sidebar-left, .sidebar-right, .footer
+.hat, .main-footer
 	height: 80px	
 	background-color: #ccc
-
-.sidebar-left, .sidebar-right
-	width: 15%
-	display: flex
-	justify-content: center
-	align-items: center
 
 .hat
 	align-items: center
@@ -34,15 +28,28 @@ div
 .hat p
 	margin-left: 50px
 
-.main
-	flex-grow: 1
+.main-conteiner
 	height: 200px
+
+.sidebar-left, .sidebar-right
+	width: 15%
 	display: flex
 	justify-content: center
 	align-items: center
 	background-color: #ccc
 
-.footer
+.main
+	flex-grow: 1
 	display: flex
 	justify-content: center
 	align-items: center
+	background-color: #ccc
+
+.main-footer
+	height: 180px
+	display: flex
+	justify-content: space-between
+
+.contacts, .e-mail, .images
+	width: 20%
+	border: 1px solid black
