@@ -1,3 +1,6 @@
+$color-conteiner-gray: #ccc
+$color-footer-conteiner-gray: #eee
+
 body, html
 	margin: 0px
 	padding: 0px
@@ -11,12 +14,9 @@ div
 	font-size: 25px
 	font-family: Arial
 	color: black
-	--back-color: #ccc
-	--colors: #eee
 
 .hat
-	height: 80px	
-	background-color: var(--back-color)
+	height: 80px
 
 .hat
 	align-items: center
@@ -37,27 +37,21 @@ div
 	width: 15%
 	justify-content: center
 	align-items: center
-	background-color: var(--back-color)
 
 .main
 	flex-grow: 1
 	justify-content: center
 	align-items: center
-	background-color: var(--back-color)
 
 .footer
 	height: 180px
 	justify-content: space-around
-	background-color: var(--back-color)
 
-	.contacts
-		background-color: var(--colors)
-
-	.e-mail
-		background-color: var(--colors)
-
-	.images
-		background-color: var(--colors)
+	.contacts, .e-mail, .images
+		background-color: $color-footer-conteiner-gray
 
 .contacts, .e-mail, .images
 	width: 20%
+
+.hat, .sidebar-left, .sidebar-right, .main, .footer
+	background-color: $color-conteiner-gray
