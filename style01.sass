@@ -19,18 +19,18 @@ div
 	align-items: center
 	height: 80px
 
-	.main-hat
+	.nav-hat
 		height: 30px
 		margin-left: auto
 		align-items: center
 		font-size: 15px
 		border: 0
 
-	.main-hat a
+	.nav-hat a
 		margin: 5px
 		text-decoration: none
 
-	.main-hat a:hover 
+	.nav-hat a:hover 
 		color: red
 
 	p 
@@ -41,13 +41,16 @@ div
 
 .sidebar-left, .sidebar-right
 	width: 15%
-	justify-content: center
 	align-items: center
+	justify-content: center
 
-.main
+.main-content
 	flex-grow: 1
 	font-size: 15px
-	display: table-row
+	flex-direction: column
+	padding: 10px
+	overflow: auto
+	border-radius: 0px
 
 
 .footer
@@ -60,5 +63,5 @@ div
 .contacts, .e-mail, .images
 	width: 20%
 
-.hat, .sidebar-left, .sidebar-right, .main, .footer
+.hat, .sidebar-left, .sidebar-right, .main-content, .footer
 	background-color: $color-container-gray
