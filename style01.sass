@@ -8,12 +8,13 @@ body, html
 div
 	display: flex
 	box-sizing: border-box
-	margin: 10px
-	border: 1px solid black
-	border-radius: 5px
 	font-size: 25px
 	font-family: Arial
 	color: black
+
+.hat, .main-container
+	margin-bottom: 10px 
+
 
 .hat
 	align-items: center
@@ -22,6 +23,7 @@ div
 	.nav-hat
 		height: 30px
 		margin-left: auto
+		margin-right: 60px
 		align-items: center
 		font-size: 15px
 		border: 0
@@ -29,15 +31,17 @@ div
 	.nav-hat a
 		margin: 5px
 		text-decoration: none
+		border: 1px solid black
+		border-radius: 10px
+		padding: 5px
 
 	.nav-hat a:hover 
-		color: red
+		color: grey
+		box-shadow: 2px 2px 2px
 
 	p 
 		margin-left: 50px
 
-.main-container
-	height: 200px
 
 .sidebar-left, .sidebar-right
 	width: 15%
@@ -45,11 +49,10 @@ div
 	justify-content: center
 
 .main-content
-	flex-grow: 1
+	flex: 1
 	font-size: 15px
 	flex-direction: column
 	padding: 10px
-	overflow: auto
 	border-radius: 0px
 	text-align: justify
 
@@ -58,11 +61,30 @@ div
 	height: 180px
 	justify-content: space-around
 
+	.contacts
+		justify-content: space-around
+		align-items: center
+
 	.contacts, .e-mail, .images
 		background-color: $color-footer-container-gray
+
+	.icon 
+		width: 30px
+		height: 30px
+
+		img
+			width: 30px
+			height: 30px
+			border-radius: 50%
+
+		img:hover
+			width: 35px
+			height: 35px
+			box-shadow: 2px 2px 2px
 
 .contacts, .e-mail, .images
 	width: 20%
 
 .hat, .sidebar-left, .sidebar-right, .main-content, .footer
 	background-color: $color-container-gray
+
